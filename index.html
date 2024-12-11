@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Generador de Código</title>
+<link rel="stylesheet" href="styles.css"
+</head>
+<body>
+<h1>Generador de Código</h1>
+<div class="container">
+  <div class="product-form">
+    <!-- Producto 1 -->
+    <div class="product-section">
+      <h2>Producto 1</h2>
+      <div class="form-group">
+        <label>Link de la imagen (src):</label>
+        <input type="text" id="p1_img" placeholder="https://ejemplo.com/imagen1.jpg" value="https://cdn.shopify.com/s/files/1/0600/2468/4714/files/4DB0A198-5F71-44B2-91EC-5645A80868ED_1_201_a.jpg?v=1733514732">
+      </div>
+      <div class="form-group">
+        <label>Link del producto (href imagen):</label>
+        <input type="text" id="p1_href" placeholder="https://ejemplo.com/producto1" value="https://tresheraccesorios.com/collections/lentes-de-sol">
+      </div>
+      <div class="form-group">
+        <label>Link del botón "Ver más":</label>
+        <input type="text" id="p1_button" placeholder="https://ejemplo.com/categoria1" value="https://tresheraccesorios.com/collections/lentes-de-sol">
+      </div>
+      <div class="form-group">
+        <label>Título del producto:</label>
+        <input type="text" id="p1_title" placeholder="Nombre del producto" value="Lentes">
+      </div>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="product-section">
+      <h2>Producto 2</h2>
+      <div class="form-group">
+        <label>Link de la imagen (src):</label>
+        <input type="text" id="p2_img" placeholder="https://ejemplo.com/imagen2.jpg" value="https://cdn.shopify.com/s/files/1/0600/2468/4714/files/1F66944E-AB9F-4E49-93A9-47C13338B4D0_1_201_a_a19d7dd7-22e4-4038-a16f-336fac72e8a5.jpg?v=1733516401">
+      </div>
+      <div class="form-group">
+        <label>Link del producto (href imagen):</label>
+        <input type="text" id="p2_href" placeholder="https://ejemplo.com/producto2" value="https://tresheraccesorios.com/collections/capelinas/products/top-10-capelinas-de-verano-mas-vendidas">
+      </div>
+      <div class="form-group">
+        <label>Link del botón "Ver más":</label>
+        <input type="text" id="p2_button" placeholder="https://ejemplo.com/categoria2" value="https://tresheraccesorios.com/collections/capelinas/products/top-10-capelinas-de-verano-mas-vendidas">
+      </div>
+      <div class="form-group">
+        <label>Título del producto:</label>
+        <input type="text" id="p2_title" placeholder="Nombre del producto" value="Capelinas">
+      </div>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="product-section">
+      <h2>Producto 3</h2>
+      <div class="form-group">
+        <label>Link de la imagen (src):</label>
+        <input type="text" id="p3_img" placeholder="https://ejemplo.com/imagen3.jpg" value="https://cdn.shopify.com/s/files/1/0600/2468/4714/files/F8A3B3E2-2CEB-44A5-A293-31AFAAAD7683_1_201_a_19f8a056-b89b-444a-8055-72ee9d76a04e.jpg?v=1733853310">
+      </div>
+      <div class="form-group">
+        <label>Link del producto (href imagen):</label>
+        <input type="text" id="p3_href" placeholder="https://ejemplo.com/producto3" value="https://tresheraccesorios.com/collections/bolsos-playeros">
+      </div>
+      <div class="form-group">
+        <label>Link del botón "Ver más":</label>
+        <input type="text" id="p3_button" placeholder="https://ejemplo.com/categoria3" value="https://tresheraccesorios.com/collections/bolsos-playeros">
+      </div>
+      <div class="form-group">
+        <label>Título del producto:</label>
+        <input type="text" id="p3_title" placeholder="Nombre del producto" value="Bolsos">
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-section">
+      <h2>Producto 4</h2>
+      <div class="form-group">
+        <label>Link de la imagen (src):</label>
+        <input type="text" id="p4_img" placeholder="https://ejemplo.com/imagen4.jpg" value="https://cdn.shopify.com/s/files/1/0600/2468/4714/files/354118F1-EC9E-40C6-B8D2-0B90D6E4DFEA.jpg?v=1733516015">
+      </div>
+      <div class="form-group">
+        <label>Link del producto (href imagen):</label>
+        <input type="text" id="p4_href" placeholder="https://ejemplo.com/producto4" value="https://tresheraccesorios.com/collections/lonas-playeros">
+      </div>
+      <div class="form-group">
+        <label>Link del botón "Ver más":</label>
+        <input type="text" id="p4_button" placeholder="https://ejemplo.com/categoria4" value="https://tresheraccesorios.com/collections/lonas-playeros">
+      </div>
+      <div class="form-group">
+        <label>Título del producto:</label>
+        <input type="text" id="p4_title" placeholder="Nombre del producto" value="Lonas Playeras">
+      </div>
+    </div>
+  </div>
+
+  <button id="generateBtn">Generar Código</button>
+
+  <div id="preview-container">
+    <h2>Vista previa del resultado</h2>
+    <div class="preview-box" id="preview-box">
+      <!-- Aquí se insertará el preview del código generado -->
+    </div>
+  </div>
+
+  <div id="result-container">
+    <h2>Código Generado</h2>
+    <a id="copyBtn">Copiar código</a>
+    <textarea id="result-code" readonly></textarea>
+  </div>
+</div>
+
+<!-- Toast para las notificaciones -->
+<div id="toast">El código ha sido copiado correctamente.</div>
+
+<script src="script.js"></script>
+</body>
+</html>
